@@ -15,7 +15,7 @@ function stringToArray(string) {
 
 <details>
   <summary>Solution</summary>
-  <p>
+
   ```javascript
   function stringToArray(string) {
   return string.split(" ");
@@ -28,6 +28,6 @@ return string.trim() ? string.split(" ") : [];
 console.log(stringToArray2("Hello World"));
 
 ```
-  </p>
+  
 </details>
 ```
