@@ -15,7 +15,6 @@ function stringToArray(string) {
 
 <details>
   <summary>Solution</summary>
- 
   ```javascript
   
   function stringToArray(string) {
