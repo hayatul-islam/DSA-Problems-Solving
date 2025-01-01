@@ -1,3 +1,5 @@
+# String to Array Utility
+
 ### 1. String to Array
 
 Write a function to split a string and convert it into an array of words.
@@ -9,21 +11,9 @@ Examples (Input ==> Output):
 function stringToArray(string) {
   // your code
 }
-
+```
 
 <details>
-  <summary>Solution</summary>
-
-function stringToArray(string) {
-return string.split(" ");
-}
-
-function stringToArray2(string) {
-return string.trim() ? string.split(" ") : [];
-}
-
-console.log(stringToArray2("Hello World"));
-
+  <summary>Click to see the solution</summary>
+  <p>This is the solution!</p>
 </details>
-
-```
