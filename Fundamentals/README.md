@@ -15,10 +15,14 @@ function stringToArray(string) {
   <summary>Solution</summary>
 
 ```javascript
+Way 1: String to array
 function stringToArray(string) {
   return string.split(" ");
 }
 
+console.log(stringToArray("Hello World"));
+
+Way 2: Handles empty strings
 function stringToArray2(string) {
   return string.trim() ? string.split(" ") : [];
 }
