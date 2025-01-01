@@ -15,19 +15,66 @@ function stringToArray(string) {
   <summary>Solution</summary>
 
 ```javascript
-Way 1: String to array
 function stringToArray(string) {
   return string.split(" ");
 }
 
-console.log(stringToArray("Hello World"));
-
-Way 2: Handles empty strings
 function stringToArray2(string) {
   return string.trim() ? string.split(" ") : [];
 }
 
+console.log(stringToArray("Hello World"));
 console.log(stringToArray2("Hello World"));
+```
+
+</details>
+
+### 2. Fake Binary
+
+Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+Note: input will never be an empty string
+
+```javascript
+Examples (Input ==> Output):
+"4543265622" ==> "0100011100"
+
+function fakeBinary(x) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function fakeBinary(x) {
+  let result = "";
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] < 5) {
+      result += 0;
+    } else {
+      result += 1;
+    }
+  }
+
+  return result;
+}
+
+function fakeBinary2(x) {
+  return x
+    .split("")
+    .map((d) => (d < 5 ? "0" : "1"))
+    .join("");
+}
+
+function fakeBinary3(x) {
+  return [...x].reduce((pre, curr) => pre + (curr < 5 ? "0" : "1"), "");
+}
+
+console.log(fakeBinary("4543265622"));
+console.log(fakeBinary2("4543265622"));
+console.log(fakeBinary3("4543265622"));
 ```
 
 </details>
