@@ -1,5 +1,3 @@
-# String to Array Utility
-
 ### 1. String to Array
 
 Write a function to split a string and convert it into an array of words.
@@ -15,20 +13,17 @@ function stringToArray(string) {
 
 <details>
   <summary>Solution</summary>
-  
-  ```javascript
-  
-  function stringToArray(string) {
+
+```javascript
+function stringToArray(string) {
   return string.split(" ");
 }
 
 function stringToArray2(string) {
-return string.trim() ? string.split(" ") : [];
+  return string.trim() ? string.split(" ") : [];
 }
 
 console.log(stringToArray2("Hello World"));
-
 ```
 
 </details>
-
