@@ -14,6 +14,20 @@ function stringToArray(string) {
 ```
 
 <details>
-  <summary>Click to see the solution</summary>
-  <p>This is the solution!</p>
+  <summary>Solution</summary>
+  <p>
+  ```javascript
+  function stringToArray(string) {
+  return string.split(" ");
+}
+
+function stringToArray2(string) {
+return string.trim() ? string.split(" ") : [];
+}
+
+console.log(stringToArray2("Hello World"));
+
+```
+  </p>
 </details>
+```
