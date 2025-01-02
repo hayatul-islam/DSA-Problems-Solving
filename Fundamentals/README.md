@@ -189,8 +189,7 @@ We need to write a function that takes this collection and returns the number of
 Notes: our team always plays 10 matches in the championship
 
 ```javascript
-Examples
-Input ==> Output
+Examples (Input ==> Output):
 ["3:1", "2:2", "0:1", ...] ==> 4
 
 function totalPoints(matches) {
@@ -213,6 +212,7 @@ function totalPoints(matches) {
       total += 1;
     }
   }
+
   return total;
 }
 
@@ -223,7 +223,6 @@ function totalPoints2(matches) {
   }, 0);
 }
 
-// Example usage:
 const results = [
   "3:1",
   "2:2",
