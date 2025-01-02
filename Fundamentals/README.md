@@ -29,7 +29,39 @@ console.log(stringToArray2("Hello World"));
 
 </details>
 
-### 2. Simple Multiplication
+### 2. Opposite number
+
+Very simple, given a number (integer / decimal / both depending on the language), find its opposite (additive inverse).
+
+```javascript
+Examples (Input ==> Output):
+12 ==> -12
+-12 ==> 12
+
+function oppositeNumber(n) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function oppositeNumber(n) {
+  return n * -1;
+}
+
+function oppositeNumber2(n) {
+  return -n;
+}
+
+console.log(oppositeNumber(13));
+console.log(oppositeNumber2(-8));
+```
+
+</details>
+
+### 3. Simple Multiplication
 
 Multiply a given number by eight if it is even, and by nine if it is odd.
 
@@ -56,12 +88,12 @@ console.log(simpleMultiplication(4));
 
 </details>
 
-### 3. Square Sum
+### 4. Square Sum
 
 Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
 ```javascript
-Examples (input ==> output):
+Examples (Input ==> Output):
 [1, 2, 2] ==> 9
 
 function squareSum(numbers) {
@@ -91,7 +123,7 @@ console.log(squareSum2([1, 2, 2]));
 
 </details>
 
-### 4. Fake Binary
+### 5. Fake Binary
 
 Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
 
