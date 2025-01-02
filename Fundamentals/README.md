@@ -241,3 +241,44 @@ console.log(totalPoints2(results));
 ```
 
 </details>
+
+### 7. Make Uppercase
+
+Write a function which converts the input string to uppercase.
+
+```javascript
+Examples (Input ==> Output):
+"hello" ==> "HELLO"
+
+function makeUppercase(str) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function makeUppercase(str) {
+  let output = "";
+  for (let i = 0; i < str.length; i++) {
+    const charCode = str[i].charCodeAt();
+    const char =
+      charCode >= 97 && charCode <= 122
+        ? String.fromCharCode(charCode - 32)
+        : str[i];
+
+    output += char;
+  }
+  return output;
+}
+
+function makeUppercase2(str) {
+  return str.toUpperCase();
+}
+
+console.log(makeUppercase("hello"));
+console.log(makeUppercase2("hello"));
+```
+
+</details>
