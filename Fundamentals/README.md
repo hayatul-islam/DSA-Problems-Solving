@@ -56,7 +56,42 @@ console.log(simpleMultiplication(4));
 
 </details>
 
-### 3. Fake Binary
+### 3. Square Sum
+
+Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+```javascript
+Examples (input ==> output):
+[1, 2, 2] ==> 9
+
+function squareSum(numbers) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function squareSum(numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i] ** 2;
+  }
+  return sum;
+}
+
+function squareSum2(numbers) {
+  return numbers.reduce((sum, num) => sum + num ** 2, 0);
+}
+
+console.log(squareSum([1, 2, 2]));
+console.log(squareSum2([1, 2, 2]));
+```
+
+</details>
+
+### 4. Fake Binary
 
 Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
 
