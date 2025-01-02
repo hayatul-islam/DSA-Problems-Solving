@@ -282,3 +282,37 @@ console.log(makeUppercase2("hello"));
 ```
 
 </details>
+
+### 8. Hero
+
+A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive?
+
+Return true if yes, false otherwise :)
+
+```javascript
+Examples (Input ==> Output):
+10, 5 ==> true
+7, 4 ==> false
+
+function hero(bullets, dragons) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function hero(bullets, dragons) {
+  return bullets >= dragons * 2;
+}
+
+function hero2(bullets, dragons) {
+  return Math.floor(bullets / 2) >= dragons;
+}
+
+console.log(hero(10, 5));
+console.log(hero2(7, 4));
+```
+
+</details>
