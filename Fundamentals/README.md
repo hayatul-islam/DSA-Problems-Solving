@@ -317,7 +317,43 @@ console.log(hero2(7, 4));
 
 </details>
 
-### 9. A square of squares
+### 9. Remove First and Last Character
+
+It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry about strings with less than two characters.
+
+```javascript
+Examples (Input ==> Output):
+"Hello" ==> "ell"
+
+function removeChar(str) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function removeChar(str) {
+  let char = "";
+  for (let i = 1; i < str.length - 1; i++) {
+    char += str[i];
+  }
+  return char;
+}
+
+function removeChar2(str) {
+  return str.slice(1, -1);
+}
+
+console.log(removeChar("Hello world"));
+```
+
+</details>
+
+-------------------- 7 kyu -----------------------
+
+### 10. A square of squares
 
 You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
 
