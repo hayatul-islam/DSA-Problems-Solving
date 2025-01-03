@@ -381,9 +381,52 @@ console.log(century(599));
 
 </details>
 
+### 11. Count of positives / sum of negatives
+
+Given an array of integers.
+
+Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+
+If the input is an empty array or is null, return an empty array.
+
+```javascript
+Examples (Input ==> Output):
+[1, 2, -3, -4, 5, -6, 7] ==> [4, -13]
+
+function countPositivesSumNegatives(arr) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function countPositivesSumNegatives(arr) {
+  if (!arr || arr.length === 0) return [];
+
+  let positives = 0;
+  let negatives = 0;
+
+  for (const num of arr) {
+    if (num > 0) {
+      positives++;
+    } else if (num < 0) {
+      negatives += num;
+    }
+  }
+
+  return [positives, negatives];
+}
+
+console.log(countPositivesSumNegatives([1, 2, -3, -4, 5, -6, 7]));
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
-### 11. A square of squares
+### 12. A square of squares
 
 You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
 
