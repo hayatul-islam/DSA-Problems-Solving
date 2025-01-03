@@ -351,9 +351,39 @@ console.log(removeChar("Hello world"));
 
 </details>
 
+### 10. Century from year
+
+The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
+
+```javascript
+Examples (Input ==> Output):
+1601 ==> 17
+2000 ==> 20
+2742 ==> 28
+
+function century(year) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function century(year) {
+  return Math.ceil(year / 100);
+}
+
+console.log(century(1201));
+console.log(century(1700));
+console.log(century(599));
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
-### 10. A square of squares
+### 11. A square of squares
 
 You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
 
