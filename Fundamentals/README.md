@@ -461,9 +461,51 @@ console.log(calculateAverage2([1, 2, 3, 4]));
 
 </details>
 
+### 13. Calculate Litters
+
+Nathan loves cycling.
+
+Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+
+You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+
+```javascript
+Examples (Input ==> Output):
+3 ==> 1
+6.7 ==> 3
+
+function litters(time) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function litters(time) {
+  return Math.floor(time * 0.5);
+}
+
+function litters2(time) {
+  return Math.floor(time / 2);
+}
+
+// time >> n ===> Math.floor(time / 2^n)
+function litters3(time) {
+  return time >> 1; // Math.floor(time / 2^1)
+}
+
+console.log(litters(3));
+console.log(litters2(7));
+console.log(litters3(7));
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
-### 13. A square of squares
+### 14. A square of squares
 
 You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
 
