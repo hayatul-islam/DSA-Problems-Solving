@@ -503,9 +503,42 @@ console.log(litters3(7));
 
 </details>
 
+### 14. Counting sheep..
+
+Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+Hint: Don't forget to check for bad values like null/undefined
+
+```javascript
+Examples (Input ==> Output):
+[true, false, true] ==> 2
+
+function countSheep(arr) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function countSheep(arr) {
+  return arr.filter((sheep) => !!sheep).length;
+}
+
+function countSheep2(arr) {
+  return arr.reduce((acc, curr) => acc + !!curr, 0);
+}
+
+console.log(countSheep([false, true, true, false]));
+console.log(countSheep2([false, true, true, false]));
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
-### 14. A square of squares
+### 15. A square of squares
 
 You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
 

@@ -25,3 +25,6 @@ function litters3(time) {
 console.log(litters(3));
 console.log(litters2(7));
 console.log(litters3(7));
+
+const num = 444;
+console.log(num.toString());
