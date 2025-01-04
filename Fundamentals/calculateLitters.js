@@ -17,7 +17,7 @@ function litters2(time) {
   return Math.floor(time / 2);
 }
 
-// time >> n ===> Math.floor(time / 2^n)
+// x >> n ===> Math.floor(x / 2^n)
 function litters3(time) {
   return time >> 1; // Math.floor(time / 2^1)
 }
