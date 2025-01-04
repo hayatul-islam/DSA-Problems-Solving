@@ -424,9 +424,46 @@ console.log(countPositivesSumNegatives([1, 2, -3, -4, 5, -6, 7]));
 
 </details>
 
+### 12. Calculate average
+
+Write a function which calculates the average of the numbers in a given array.
+
+Note: Empty arrays should return 0.
+
+```javascript
+Examples (Input ==> Output):
+[1, 2, 3] ==> 2
+
+function calculateAverage(arr) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function calculateAverage(arr) {
+  if (arr.length === 0) return 0;
+  const sum = arr.reduce((total, val) => total + val, 0);
+  return sum / arr.length;
+}
+
+function calculateAverage2(arr) {
+  return arr.length > 0
+    ? arr.reduce((total, val) => total + val, 0) / arr.length
+    : 0;
+}
+
+console.log(calculateAverage([1, 2, 3, 4]));
+console.log(calculateAverage2([1, 2, 3, 4]));
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
-### 12. A square of squares
+### 13. A square of squares
 
 You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
 
