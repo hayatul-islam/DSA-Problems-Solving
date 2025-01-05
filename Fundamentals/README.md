@@ -536,9 +536,47 @@ console.log(countSheep2([false, true, true, false]));
 
 </details>
 
+### 15. Convert number to reversed array of digits
+
+Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+
+```javascript
+Examples (Input ==> Output):
+35231 ==> [1,3,2,5,3]
+0 ==> [0]
+
+function digitize(arr) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function digitize(n) {
+  return n.toString().split("").reverse().map(Number);
+}
+
+function digitize2(n) {
+  let result = [];
+  while (n > 0) {
+    result.push(n % 10);
+    n = Math.floor(n / 10);
+  }
+
+  return result.length > 0 ? result : [0];
+}
+
+console.log(digitize(4556));
+console.log(digitize2(4556));
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
-### 15. A square of squares
+### 16. A square of squares
 
 You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
 
@@ -591,7 +629,7 @@ console.log(isSquare3(24));
 
 </details>
 
-### 16. Shortest Word
+### 17. Shortest Word
 
 Simple, given a string of words, return the length of the shortest word(s).
 
@@ -636,7 +674,7 @@ console.log(findShort2("Shortest Word"));
 
 </details>
 
-### 17. Sum of the first nth term of Series
+### 18. Sum of the first nth term of Series
 
 Sum of the first nth term of Series
 Your task is to write a function which returns the n-th term of the following series, which is the sum of the first n terms of the sequence (n is the input parameter).
