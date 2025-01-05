@@ -985,3 +985,36 @@ console.log(isTriangle2(1, 2, 2));
 ```
 
 </details>
+
+### . Odd or Even?
+
+Given a list of integers, determine whether the sum of its elements is odd or even.
+
+Give your answer as a string matching "odd" or "even".
+If the input array is empty consider it as: [0] (array with a zero).
+
+Have fun!
+
+```javascript
+Examples (Input ==> Output):
+[0, 1, 4] ==> "odd"
+[0, -1, -5] ==> "even"
+
+function oddOrEven(arr) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function oddOrEven(arr) {
+  const sum = arr.reduce((s, n) => s + n, 0);
+  return sum % 2 === 0 ? "even" : "odd";
+}
+
+console.log(oddOrEven([0, 1, 4]));
+```
+
+</details>
