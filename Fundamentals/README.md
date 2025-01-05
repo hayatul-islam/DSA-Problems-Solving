@@ -614,9 +614,40 @@ console.log(digitize2(4556));
 
 </details>
 
+### 17. Remove String Spaces
+
+Write a function that removes the spaces from the string, then return the resultant string.
+
+```javascript
+Examples (Input ==> Output):
+"8aaaaa dddd     r " ===> "8aaaaaddddr"
+
+function noSpace(x) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function noSpace(x) {
+  return x.split(" ").join("");
+}
+
+function noSpace2(x) {
+  return x.replace(/\s+/g, "");
+}
+
+console.log(noSpace("I l o v e     Js"));
+console.log(noSpace2("I l o v e     Js"));
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
-### 17. A square of squares
+### 18. A square of squares
 
 You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
 
@@ -669,7 +700,7 @@ console.log(isSquare3(24));
 
 </details>
 
-### 18. Shortest Word
+### 19. Shortest Word
 
 Simple, given a string of words, return the length of the shortest word(s).
 
@@ -714,7 +745,7 @@ console.log(findShort2("Shortest Word"));
 
 </details>
 
-### 19. Sum of the first nth term of Series
+### 20. Sum of the first nth term of Series
 
 Sum of the first nth term of Series
 Your task is to write a function which returns the n-th term of the following series, which is the sum of the first n terms of the sequence (n is the input parameter).
@@ -763,7 +794,7 @@ console.log(seriesSum2(5));
 
 </details>
 
-### 20. Sum of odd numbers
+### 21. Sum of odd numbers
 
 Given the triangle of consecutive odd numbers:
 
@@ -809,7 +840,7 @@ console.log(sumOddNumbers3(3));
 
 </details>
 
-### 21. Find the next perfect square!
+### 22. Find the next perfect square!
 
 You might know some pretty large perfect squares. But what about the NEXT one?
 
@@ -849,7 +880,7 @@ console.log(findNextSquare2(121));
 
 </details>
 
-### 22. Is this a triangle?
+### 23. Is this a triangle?
 
 Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
 
