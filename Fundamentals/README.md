@@ -123,7 +123,47 @@ console.log(squareSum2([1, 2, 2]));
 
 </details>
 
-### 5. Fake Binary
+### 5. Calculate BMI
+
+Write function bmi that calculates body mass index (bmi = weight / height2).
+
+if bmi <= 18.5 return "Underweight"
+if bmi <= 25.0 return "Normal"
+if bmi <= 30.0 return "Overweight"
+if bmi > 30 return "Obese"
+
+```javascript
+Examples (Input ==> Output):
+80, 1.8 ==> "Normal"
+
+function calculateBmi(weight, height) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function calculateBmi(weight, height) {
+  const bmi = weight / height ** 2;
+  if (bmi <= 18.5) {
+    return "Underweight";
+  } else if (bmi <= 25.0) {
+    return "Normal";
+  } else if (bmi <= 30.0) {
+    return "Overweight";
+  } else {
+    return "Obese";
+  }
+}
+
+console.log(calculateBmi(80, 1.8));
+```
+
+</details>
+
+### 6. Fake Binary
 
 Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
 
@@ -173,7 +213,7 @@ console.log(fakeBinary3("4543265622"));
 
 </details>
 
-### 6. Total Points
+### 7. Total Points
 
 Our football team has finished the championship.
 
@@ -242,7 +282,7 @@ console.log(totalPoints2(results));
 
 </details>
 
-### 7. Make Uppercase
+### 8. Make Uppercase
 
 Write a function which converts the input string to uppercase.
 
@@ -283,7 +323,7 @@ console.log(makeUppercase2("hello"));
 
 </details>
 
-### 8. Hero
+### 9. Hero
 
 A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive?
 
@@ -317,7 +357,7 @@ console.log(hero2(7, 4));
 
 </details>
 
-### 9. Remove First and Last Character
+### 10. Remove First and Last Character
 
 It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry about strings with less than two characters.
 
@@ -351,7 +391,7 @@ console.log(removeChar("Hello world"));
 
 </details>
 
-### 10. Century from year
+### 11. Century from year
 
 The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
 
@@ -381,7 +421,7 @@ console.log(century(599));
 
 </details>
 
-### 11. Count of positives / sum of negatives
+### 12. Count of positives / sum of negatives
 
 Given an array of integers.
 
@@ -424,7 +464,7 @@ console.log(countPositivesSumNegatives([1, 2, -3, -4, 5, -6, 7]));
 
 </details>
 
-### 12. Calculate average
+### 13. Calculate average
 
 Write a function which calculates the average of the numbers in a given array.
 
@@ -461,7 +501,7 @@ console.log(calculateAverage2([1, 2, 3, 4]));
 
 </details>
 
-### 13. Calculate Litters
+### 14. Calculate Litters
 
 Nathan loves cycling.
 
@@ -503,7 +543,7 @@ console.log(litters3(7));
 
 </details>
 
-### 14. Counting sheep..
+### 15. Counting sheep..
 
 Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
 
@@ -536,7 +576,7 @@ console.log(countSheep2([false, true, true, false]));
 
 </details>
 
-### 15. Convert number to reversed array of digits
+### 16. Convert number to reversed array of digits
 
 Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
 
@@ -576,7 +616,7 @@ console.log(digitize2(4556));
 
 -------------------- 7 kyu -----------------------
 
-### 16. A square of squares
+### 17. A square of squares
 
 You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
 
@@ -629,7 +669,7 @@ console.log(isSquare3(24));
 
 </details>
 
-### 17. Shortest Word
+### 18. Shortest Word
 
 Simple, given a string of words, return the length of the shortest word(s).
 
@@ -674,7 +714,7 @@ console.log(findShort2("Shortest Word"));
 
 </details>
 
-### 18. Sum of the first nth term of Series
+### 19. Sum of the first nth term of Series
 
 Sum of the first nth term of Series
 Your task is to write a function which returns the n-th term of the following series, which is the sum of the first n terms of the sequence (n is the input parameter).
@@ -723,7 +763,7 @@ console.log(seriesSum2(5));
 
 </details>
 
-### 19. Sum of odd numbers
+### 20. Sum of odd numbers
 
 Given the triangle of consecutive odd numbers:
 
@@ -769,7 +809,7 @@ console.log(sumOddNumbers3(3));
 
 </details>
 
-### 20. Find the next perfect square!
+### 21. Find the next perfect square!
 
 You might know some pretty large perfect squares. But what about the NEXT one?
 
@@ -809,7 +849,7 @@ console.log(findNextSquare2(121));
 
 </details>
 
-### 21. Is this a triangle?
+### 22. Is this a triangle?
 
 Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
 
