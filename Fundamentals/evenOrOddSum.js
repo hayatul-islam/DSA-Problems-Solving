@@ -21,4 +21,9 @@ function oddOrEven(arr) {
   return sum % 2 === 0 ? "even" : "odd";
 }
 
+function oddOrEven2(arr) {
+  return ["even", "odd"][arr.reduce((s, n) => s + n, 0) & 1];
+}
+
 console.log(oddOrEven([0, 1, 4]));
+console.log(oddOrEven2([0, 1, 4]));
