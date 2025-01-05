@@ -683,6 +683,36 @@ console.log(removeEveryOther2([1, 2, 3]));
 
 </details>
 
+### 19. Area or Perimeter
+
+You are given the length and width of a 4-sided polygon. The polygon can either be a rectangle or a square.
+If it is a square, return its area. If it is a rectangle, return its perimeter.
+
+Note: for the purposes of this kata you will assume that it is a square if its length and width are equal, otherwise it is a rectangle.
+
+```javascript
+Examples (Input ==> Output):
+6, 10 ==> 32
+3, 3 ==> 9
+
+function areaOrPerimeter(length, width) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+const areaOrPerimeter = function (length, width) {
+  return length === width ? length * width : 2 * (length + width);
+};
+
+console.log(areaOrPerimeter(6, 10));
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
 ### A square of squares
