@@ -645,9 +645,47 @@ console.log(noSpace2("I l o v e     Js"));
 
 </details>
 
+### 18. Removing Elements
+
+Take an array and remove every second element from the array. Always keep the first element and start removing with the next element.
+
+None of the arrays will be empty, so you don't have to worry about that!
+
+```javascript
+Examples (Input ==> Output):
+[1,2,3,4,5] ===> [1,3,5]
+
+function removeEveryOther(arr) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function removeEveryOther(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    i % 2 === 0 && newArr.push(arr[i]);
+  }
+
+  return newArr;
+}
+
+function removeEveryOther2(arr) {
+  return arr.filter((_, index) => index % 2 === 0);
+}
+
+console.log(removeEveryOther([1, 2, 3]));
+console.log(removeEveryOther2([1, 2, 3]));
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
-### 18. A square of squares
+### A square of squares
 
 You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
 
@@ -700,7 +738,7 @@ console.log(isSquare3(24));
 
 </details>
 
-### 19. Shortest Word
+### Shortest Word
 
 Simple, given a string of words, return the length of the shortest word(s).
 
@@ -745,7 +783,7 @@ console.log(findShort2("Shortest Word"));
 
 </details>
 
-### 20. Sum of the first nth term of Series
+### Sum of the first nth term of Series
 
 Sum of the first nth term of Series
 Your task is to write a function which returns the n-th term of the following series, which is the sum of the first n terms of the sequence (n is the input parameter).
@@ -794,7 +832,7 @@ console.log(seriesSum2(5));
 
 </details>
 
-### 21. Sum of odd numbers
+### Sum of odd numbers
 
 Given the triangle of consecutive odd numbers:
 
@@ -840,7 +878,7 @@ console.log(sumOddNumbers3(3));
 
 </details>
 
-### 22. Find the next perfect square!
+### . Find the next perfect square!
 
 You might know some pretty large perfect squares. But what about the NEXT one?
 
@@ -880,7 +918,7 @@ console.log(findNextSquare2(121));
 
 </details>
 
-### 23. Is this a triangle?
+### . Is this a triangle?
 
 Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
 
