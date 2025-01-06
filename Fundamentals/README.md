@@ -713,9 +713,48 @@ console.log(areaOrPerimeter(6, 10));
 
 </details>
 
+### 20. Abbreviate a Two Word Name
+
+Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+
+The output should be two capital letters with a dot separating them.
+It should look like this:
+
+```javascript
+Examples (Input ==> Output):
+Sam Harris ==> S.H
+patrick feeney ==> P.F
+
+function abbrevName(name) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function abbrevName(name) {
+  const words = name.split(" ");
+  return `${words[0][0].toUpperCase()}.${words[1][0].toUpperCase()}`;
+}
+
+function abbrevName2(name) {
+  return name
+    .split(" ")
+    .map((i) => i[0].toUpperCase())
+    .join(".");
+}
+
+console.log(abbrevName("Hello World"));
+console.log(abbrevName2("Hello World"));
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
-### 20. A square of squares
+### 21. A square of squares
 
 You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
 
@@ -768,7 +807,7 @@ console.log(isSquare3(24));
 
 </details>
 
-### 21. Shortest Word
+### 22. Shortest Word
 
 Simple, given a string of words, return the length of the shortest word(s).
 
@@ -813,7 +852,7 @@ console.log(findShort2("Shortest Word"));
 
 </details>
 
-### 22. Sum of the first nth term of Series
+### 23. Sum of the first nth term of Series
 
 Sum of the first nth term of Series
 Your task is to write a function which returns the n-th term of the following series, which is the sum of the first n terms of the sequence (n is the input parameter).
@@ -862,7 +901,7 @@ console.log(seriesSum2(5));
 
 </details>
 
-### 23. Sum of odd numbers
+### 24. Sum of odd numbers
 
 Given the triangle of consecutive odd numbers:
 
@@ -908,7 +947,7 @@ console.log(sumOddNumbers3(3));
 
 </details>
 
-### 24. Find the next perfect square!
+### 25. Find the next perfect square!
 
 You might know some pretty large perfect squares. But what about the NEXT one?
 
@@ -948,7 +987,7 @@ console.log(findNextSquare2(121));
 
 </details>
 
-### 25. Is this a triangle?
+### 26. Is this a triangle?
 
 Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
 
@@ -986,7 +1025,7 @@ console.log(isTriangle2(1, 2, 2));
 
 </details>
 
-### 26. Odd or Even?
+### 27. Odd or Even?
 
 Given a list of integers, determine whether the sum of its elements is odd or even.
 
@@ -1019,7 +1058,7 @@ console.log(oddOrEven([0, 1, 4]));
 
 </details>
 
-### 27. Highest and Lowest
+### 28. Highest and Lowest
 
 In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
 
