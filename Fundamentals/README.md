@@ -1018,3 +1018,59 @@ console.log(oddOrEven([0, 1, 4]));
 ```
 
 </details>
+
+### 27. Highest and Lowest
+
+In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+
+Notes
+All numbers are valid Int32, no need to validate them.
+There will always be at least one number in the input string.
+Output string must be two numbers separated by a single space, and highest number is first.
+
+```javascript
+Examples (Input ==> Output):
+"1 2 3 4 5 ==> "5 1"
+"1 2 -3 4 5" ==> "5 -3"
+
+function highAndLow(numbers) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function highAndLow(numbers) {
+  const nums = numbers.split(" ");
+
+  let high = nums[0];
+  let low = nums[0];
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] > high) {
+      high = nums[i];
+    }
+
+    if (nums[i] < low) {
+      low = nums[i];
+    }
+  }
+
+  return `${high} ${low}`;
+}
+
+function highAndLow2(numbers) {
+  numbers = numbers.split(" ");
+  const high = Math.max(...numbers);
+  const low = Math.min(...numbers);
+
+  return `${high} ${low}`;
+}
+
+console.log(highAndLow("1 2 3 4 5"));
+console.log(highAndLow2("1 2 3 4 5"));
+```
+
+</details>
