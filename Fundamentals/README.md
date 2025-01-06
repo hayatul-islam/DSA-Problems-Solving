@@ -715,7 +715,7 @@ console.log(areaOrPerimeter(6, 10));
 
 -------------------- 7 kyu -----------------------
 
-### A square of squares
+### 20. A square of squares
 
 You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
 
@@ -768,7 +768,7 @@ console.log(isSquare3(24));
 
 </details>
 
-### Shortest Word
+### 21. Shortest Word
 
 Simple, given a string of words, return the length of the shortest word(s).
 
@@ -813,7 +813,7 @@ console.log(findShort2("Shortest Word"));
 
 </details>
 
-### Sum of the first nth term of Series
+### 22. Sum of the first nth term of Series
 
 Sum of the first nth term of Series
 Your task is to write a function which returns the n-th term of the following series, which is the sum of the first n terms of the sequence (n is the input parameter).
@@ -862,7 +862,7 @@ console.log(seriesSum2(5));
 
 </details>
 
-### Sum of odd numbers
+### 23. Sum of odd numbers
 
 Given the triangle of consecutive odd numbers:
 
@@ -908,7 +908,7 @@ console.log(sumOddNumbers3(3));
 
 </details>
 
-### . Find the next perfect square!
+### 24. Find the next perfect square!
 
 You might know some pretty large perfect squares. But what about the NEXT one?
 
@@ -948,7 +948,7 @@ console.log(findNextSquare2(121));
 
 </details>
 
-### . Is this a triangle?
+### 25. Is this a triangle?
 
 Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
 
@@ -986,7 +986,7 @@ console.log(isTriangle2(1, 2, 2));
 
 </details>
 
-### . Odd or Even?
+### 26. Odd or Even?
 
 Given a list of integers, determine whether the sum of its elements is odd or even.
 
