@@ -784,7 +784,7 @@ console.log(twiceAsOld(36, 7));
 
 -------------------- 7 kyu -----------------------
 
-### 21. A square of squares
+### 22. A square of squares
 
 You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
 
@@ -837,7 +837,7 @@ console.log(isSquare3(24));
 
 </details>
 
-### 22. Shortest Word
+### 23. Shortest Word
 
 Simple, given a string of words, return the length of the shortest word(s).
 
@@ -882,7 +882,7 @@ console.log(findShort2("Shortest Word"));
 
 </details>
 
-### 23. Sum of the first nth term of Series
+### 24. Sum of the first nth term of Series
 
 Sum of the first nth term of Series
 Your task is to write a function which returns the n-th term of the following series, which is the sum of the first n terms of the sequence (n is the input parameter).
@@ -931,7 +931,7 @@ console.log(seriesSum2(5));
 
 </details>
 
-### 24. Sum of odd numbers
+### 25. Sum of odd numbers
 
 Given the triangle of consecutive odd numbers:
 
@@ -977,7 +977,7 @@ console.log(sumOddNumbers3(3));
 
 </details>
 
-### 25. Find the next perfect square!
+### 26. Find the next perfect square!
 
 You might know some pretty large perfect squares. But what about the NEXT one?
 
@@ -1017,7 +1017,7 @@ console.log(findNextSquare2(121));
 
 </details>
 
-### 26. Is this a triangle?
+### 27. Is this a triangle?
 
 Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
 
@@ -1055,7 +1055,7 @@ console.log(isTriangle2(1, 2, 2));
 
 </details>
 
-### 27. Odd or Even?
+### 28. Odd or Even?
 
 Given a list of integers, determine whether the sum of its elements is odd or even.
 
@@ -1088,7 +1088,7 @@ console.log(oddOrEven([0, 1, 4]));
 
 </details>
 
-### 28. Highest and Lowest
+### 29. Highest and Lowest
 
 In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
 
@@ -1144,7 +1144,7 @@ console.log(highAndLow2("1 2 3 4 5"));
 
 </details>
 
-### 29. Growth of a Population
+### 30. Growth of a Population
 
 In a small town the population is p0 = 1000 at the beginning of a year. The population regularly increases by 2 percent per year and moreover 50 new inhabitants per year come to live in the town. How many years does the town need to see its population greater than or equal to p = 1200 inhabitants?
 
@@ -1200,7 +1200,7 @@ console.log(nbYear(1500, 5, 100, 5000));
 
 </details>
 
-### 3. Reverse words
+### 31. Reverse words
 
 Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
 
@@ -1230,7 +1230,7 @@ console.log(reverseWords("This is an example!"));
 
 </details>
 
-### 3. Descending Order
+### 32. Descending Order
 
 Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
 
