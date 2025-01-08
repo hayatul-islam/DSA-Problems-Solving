@@ -1199,3 +1199,33 @@ console.log(nbYear(1500, 5, 100, 5000));
 ```
 
 </details>
+
+### 3. Reverse words
+
+Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+
+```javascript
+Examples (Input ==> Output):
+"This is an example!" ==> "sihT si na !elpmaxe"
+"double  spaces"      ==> "elbuod  secaps"
+
+function reverseWords(str) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function reverseWords(str) {
+  return str
+    .split(" ")
+    .map((word) => word.split("").reverse().join(""))
+    .join(" ");
+}
+
+console.log(reverseWords("This is an example!"));
+```
+
+</details>
