@@ -828,6 +828,42 @@ console.log(betterThanAverage2([2, 3], 5));
 
 </details>
 
+### 23. Remove exclamation marks
+
+Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
+```javascript
+Examples (Input ==> Output):
+"Hello World!" ==> "Hello World"
+
+function removeExclamationMarks(str) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function removeExclamationMarks(str) {
+  return str.split("!").join("");
+}
+
+function removeExclamationMarks2(str) {
+  return str.replace(/!/g, "");
+}
+
+function removeExclamationMarks3(str) {
+  return str.replaceAll("!", "");
+}
+
+console.log(removeExclamationMarks("Hello World!"));
+console.log(removeExclamationMarks2("Hello World!"));
+console.log(removeExclamationMarks3("Hello World!"));
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
 ### 22. A square of squares
