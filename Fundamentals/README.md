@@ -1280,13 +1280,6 @@ console.log(reverseWords("This is an example!"));
 
 Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
 
-Examples:
-Input: 42145 Output: 54421
-
-Input: 145263 Output: 654321
-
-Input: 123456789 Output: 987654321
-
 ```javascript
 Examples (Input ==> Output):
 145263    ==> 54421
@@ -1331,6 +1324,38 @@ function descendingOrder2(n) {
 
 console.log(descendingOrder(125678943));
 console.log(descendingOrder2(125678943));
+```
+
+</details>
+
+### 33. Friend or Foe?
+
+Make a program that filters a list of strings and returns a list with only your friends name in it.
+
+If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
+
+Input strings will only contain letters.
+Note: keep the original order of the names in the output.
+
+```javascript
+Examples (Input ==> Output):
+["Ryan", "Kieran", "Jason", "Yous"] ==> ["Ryan", "Yous"]
+["Peter", "Stephen", "Joe"]         ==> []
+
+function friend(friends) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function friend(friends) {
+  return friends.filter((friend) => friend.length === 4);
+}
+
+console.log(friend(["Ryan", "Kieran", "Jason", "Yous"]));
 ```
 
 </details>
