@@ -1019,6 +1019,46 @@ console.log(smash(["Hello", "World"]));
 
 </details>
 
+### 28. altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+
+Define String.prototype.toAlternatingCase (or a similar function/method such as to_alternating_case/toAlternatingCase/ToAlternatingCase in your selected language; see the initial solution for details) such that each lowercase letter becomes uppercase and each uppercase letter becomes lowercase.
+
+"String.prototype.toAlternatingCase".toAlternatingCase() === "sTRING.PROTOTYPE.TOaLTERNATINGcASE"
+As usual, your function/method should be pure, i.e. it should not mutate the original string.
+
+```javascript
+Examples (Input ==> Output):
+"hello world".toAlternatingCase() ==> "HELLO WORLD"
+"HELLO WORLD".toAlternatingCase() ==> "hello world"
+"hello WORLD".toAlternatingCase() ==> "HELLO world"
+"HeLLo WoRLD".toAlternatingCase() ==> "hEllO wOrld"
+"12345".toAlternatingCase()       ==> "12345"
+
+String.prototype.toAlternatingCase = function () {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+String.prototype.toAlternatingCase = function () {
+  return this.split("")
+    .map((char) =>
+      char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase()
+    )
+    .join("");
+};
+
+console.log("hello world".toAlternatingCase());
+console.log("HELLO WORLD".toAlternatingCase());
+console.log("HeLLo WoRLD".toAlternatingCase());
+console.log("12345".toAlternatingCase());
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
 ### . A square of squares
