@@ -983,9 +983,45 @@ console.log(strCount("Hello", "o"));
 
 </details>
 
+### 27. Sentence Smash
+
+Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. Be careful, there shouldn't be a space at the beginning or the end of the sentence!
+
+Assumptions
+You can assume that you are only given words.
+You cannot assume the size of the array.
+You can assume that you do get an array.
+What We're Testing
+We're testing basic loops and string manipulation. This is for beginners who are just learning loops and string manipulation.
+
+Disclaimer
+This is for beginners so we want to test basic loops and string manipulation. Advanced users should easily be able to do this in one line.
+
+```javascript
+Examples (Input ==> Output):
+['hello', 'world']  =>  'hello world'
+
+function smash(words) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function smash(words) {
+  return words.join(" ");
+}
+
+console.log(smash(["Hello", "World"]));
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
-### 22. A square of squares
+### . A square of squares
 
 You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
 
@@ -1038,7 +1074,7 @@ console.log(isSquare3(24));
 
 </details>
 
-### 23. Shortest Word
+### . Shortest Word
 
 Simple, given a string of words, return the length of the shortest word(s).
 
@@ -1083,7 +1119,7 @@ console.log(findShort2("Shortest Word"));
 
 </details>
 
-### 24. Sum of the first nth term of Series
+### . Sum of the first nth term of Series
 
 Sum of the first nth term of Series
 Your task is to write a function which returns the n-th term of the following series, which is the sum of the first n terms of the sequence (n is the input parameter).
@@ -1132,7 +1168,7 @@ console.log(seriesSum2(5));
 
 </details>
 
-### 25. Sum of odd numbers
+### . Sum of odd numbers
 
 Given the triangle of consecutive odd numbers:
 
@@ -1178,7 +1214,7 @@ console.log(sumOddNumbers3(3));
 
 </details>
 
-### 26. Find the next perfect square!
+### . Find the next perfect square!
 
 You might know some pretty large perfect squares. But what about the NEXT one?
 
@@ -1218,7 +1254,7 @@ console.log(findNextSquare2(121));
 
 </details>
 
-### 27. Is this a triangle?
+### . Is this a triangle?
 
 Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
 
@@ -1256,7 +1292,7 @@ console.log(isTriangle2(1, 2, 2));
 
 </details>
 
-### 28. Odd or Even?
+### . Odd or Even?
 
 Given a list of integers, determine whether the sum of its elements is odd or even.
 
@@ -1289,7 +1325,7 @@ console.log(oddOrEven([0, 1, 4]));
 
 </details>
 
-### 29. Highest and Lowest
+### . Highest and Lowest
 
 In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
 
@@ -1345,7 +1381,7 @@ console.log(highAndLow2("1 2 3 4 5"));
 
 </details>
 
-### 30. Growth of a Population
+### . Growth of a Population
 
 In a small town the population is p0 = 1000 at the beginning of a year. The population regularly increases by 2 percent per year and moreover 50 new inhabitants per year come to live in the town. How many years does the town need to see its population greater than or equal to p = 1200 inhabitants?
 
@@ -1401,7 +1437,7 @@ console.log(nbYear(1500, 5, 100, 5000));
 
 </details>
 
-### 31. Reverse words
+### . Reverse words
 
 Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
 
@@ -1431,7 +1467,7 @@ console.log(reverseWords("This is an example!"));
 
 </details>
 
-### 32. Descending Order
+### . Descending Order
 
 Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
 
@@ -1483,7 +1519,7 @@ console.log(descendingOrder2(125678943));
 
 </details>
 
-### 33. Friend or Foe?
+### . Friend or Foe?
 
 Make a program that filters a list of strings and returns a list with only your friends name in it.
 
@@ -1515,7 +1551,7 @@ console.log(friend(["Ryan", "Kieran", "Jason", "Yous"]));
 
 </details>
 
-### 34. List Filtering
+### . List Filtering
 
 In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
 
@@ -1542,7 +1578,7 @@ console.log(filterList([1, 2, "a", 0, "b", -9]));
 
 </details>
 
-### 35. Printer Errors
+### . Printer Errors
 
 In a factory a printer prints labels for boxes. For one kind of boxes the printer has to use colors which, for the sake of simplicity, are named with letters from a to m.
 
