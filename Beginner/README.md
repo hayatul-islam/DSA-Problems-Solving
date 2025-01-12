@@ -1907,7 +1907,7 @@ console.log(XO2("ooxx"));
 
 </details>
 
-### . Regex validate PIN code
+### 49. Regex validate PIN code
 
 ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
 
