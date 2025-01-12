@@ -1138,6 +1138,35 @@ console.log(grow2([1, 2, 3, 4]));
 
 </details>
 
+### 31. Sum of positive
+
+You get an array of numbers, return the sum of all of the positives ones.
+
+Note
+If there is nothing to sum, the sum is default to 0.
+
+```javascript
+Examples (Input ==> Output):
+[1, -4, 7, 12] ==> 20
+
+function positiveSum(arr) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function positiveSum(arr) {
+  return arr.reduce((sum, n) => sum + (n > 0 && n), 0);
+}
+
+console.log(positiveSum([1, -4, 7, 12]));
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
 ### . A square of squares
