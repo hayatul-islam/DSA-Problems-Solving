@@ -1167,6 +1167,58 @@ console.log(positiveSum([1, -4, 7, 12]));
 
 </details>
 
+### 32. Sum without highest and lowest number
+
+Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
+
+The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
+
+Mind the input validation.
+
+Input validation
+If an empty value ( null, None, Nothing, nil etc. ) is given instead of an array, or the given array is an empty list or a list with only 1 element, return 0.
+
+```javascript
+Examples (Input ==> Output):
+[1, -4, 7, 12]  ==> 20
+
+function positiveSum(arr) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function sumArray(arr) {
+  if (!Array.isArray(arr) && arr.length < 2) return 0;
+
+  const max = Math.max(...arr);
+  const low = Math.min(...arr);
+
+  return arr.reduce((sum, n) => {
+    n === max ? (n = 0) : n === low ? (n = 0) : n;
+    return sum + n;
+  }, 0);
+}
+
+function sumArray2(arr) {
+  if (!Array.isArray(arr) && arr.length < 2) return 0;
+
+  const max = Math.max(...arr);
+  const low = Math.min(...arr);
+
+  const total = arr.reduce((sum, n) => sum + n, 0);
+  return total - low - max;
+}
+
+console.log(sumArray([6, 2, 1, 8, 10]));
+console.log(sumArray2([6, 2, 1, 8, 10]));
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
 ### . A square of squares
