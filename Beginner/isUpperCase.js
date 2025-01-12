@@ -20,4 +20,9 @@ String.prototype.isUpperCase = function () {
     });
 };
 
-console.log("HEf".isUpperCase());
+String.prototype.isUpperCase2 = function () {
+  return this.toString() === this.toUpperCase();
+};
+
+console.log("HE".isUpperCase());
+console.log("HE".isUpperCase2());

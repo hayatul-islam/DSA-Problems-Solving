@@ -1219,6 +1219,47 @@ console.log(sumArray2([6, 2, 1, 8, 10]));
 
 </details>
 
+### 33. Is the string uppercase?
+
+Task
+Create a method to see whether the string is ALL CAPS.
+
+In this Kata, a string is said to be in ALL CAPS whenever it does not contain any lowercase letter so any string containing no letters at all is trivially considered to be in ALL CAPS.
+
+```javascript
+Examples (Input ==> Output):
+"c" ==> false
+"C"==> true
+"hello I AM HAYATUL" ==> false
+"HELLO I AM HAYATUL" ==> true
+
+String.prototype.isUpperCase = function () {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+String.prototype.isUpperCase = function () {
+  return this.toString()
+    .split("")
+    .every((char) => {
+      return char === char.toUpperCase();
+    });
+};
+
+String.prototype.isUpperCase2 = function () {
+  return this.toString() === this.toUpperCase();
+};
+
+console.log("HE".isUpperCase());
+console.log("HE".isUpperCase2());
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
 ### . A square of squares
