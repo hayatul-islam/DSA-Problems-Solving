@@ -1948,7 +1948,7 @@ console.log(XO2("ooxx"));
 
 </details>
 
-### 49. Regex validate PIN code
+### . Regex validate PIN code
 
 ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
 
@@ -1981,6 +1981,55 @@ function validatePIN2(pin) {
 console.log(validatePIN("2356"));
 console.log(validatePIN("a356"));
 console.log(validatePIN("235656"));
+```
+
+</details>
+
+### 50. Beginner Series #3 Sum of Numbers
+
+Given two integers a and b, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return a or b.
+
+Note: a and b are not ordered!
+Your function should only return a number, not the explanation about how you get that number
+
+```javascript
+Examples (Input ==> Output):
+(1, 0) ==> 1 (1 + 0 = 1)
+(1, 2) ==> 3 (1 + 2 = 3)
+(0, 1) ==> 1 (0 + 1 = 1)
+(1, 1) ==> 1 (1 since both are same)
+(-1, 0) ==> -1 (-1 + 0 = -1)
+(-1, 2) ==> 2 (-1 + 0 + 1 + 2 = 2)
+
+function getSum(a, b) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function getSum(a, b) {
+  const min = Math.min(a, b);
+  const max = Math.max(a, b);
+
+  let sum = 0;
+  for (let i = min; i <= max; i++) {
+    sum += i;
+  }
+
+  return sum;
+}
+
+function getSum2(a, b) {
+  return ((a + b) * (Math.abs(a - b) + 1)) / 2;
+}
+
+console.log(getSum(1, 0));
+console.log(getSum(1, 2));
+console.log(getSum(1, 1));
+console.log(getSum(-1, 2));
 ```
 
 </details>
