@@ -1328,6 +1328,54 @@ console.log(quarterOf(11));
 
 </details>
 
+### 36. Sort and Star
+
+You will be given a list of strings. You must sort it alphabetically (case-sensitive, and based on the ASCII values of the chars) and then return the first value.
+
+The returned value must be a string, and have "\*\*\*" between each of its letters.
+
+You should not remove or add elements from/to the array.
+
+```javascript
+Examples (Input ==> Output):
+ ["banana", "apple", "cherry"] ==> "a***p***p***l***e"
+
+function solution(s) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function twoSort(s) {
+  return s.sort()[0].split("").join("***");
+}
+```
+
+</details>
+
+### .
+
+```javascript
+Examples (Input ==> Output):
+ ==>
+
+function solution() {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
 ### . A square of squares
