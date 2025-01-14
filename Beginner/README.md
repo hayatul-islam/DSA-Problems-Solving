@@ -2326,6 +2326,39 @@ console.log(getDivisorsCnt3(12));
 
 ---
 
+### . Sort Numbers
+
+Finish the solution so that it sorts the passed in array of numbers. If the function passes in an empty array or null/nil value then it should return an empty array.
+
+```javascript
+Examples (Input ==> Output):
+ [1, 2, 10, 50, 5] ==> [1,2,5,10,50]
+ null              ==> []
+
+function solution() {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function solution(nums) {
+  if (!Array.isArray(nums)) return [];
+  return nums.sort((a, b) => a - b);
+}
+
+function solution2(nums) {
+  return nums ? nums.sort((a, b) => a - b) : [];
+}
+
+console.log(solution(null));
+console.log(solution([1, 2, 10, 50, 5]));
+```
+
+</details>
+
 ### .
 
 ```javascript
