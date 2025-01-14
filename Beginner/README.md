@@ -2164,3 +2164,102 @@ console.log(solution(["a", "b", "c"]));
 ```
 
 </details>
+
+### . Count the divisors of a number
+
+Count the number of divisors of a positive integer n.
+
+Random tests go up to n = 500000, but fixed tests go higher.
+
+Note you should only return a number, the count of divisors. The numbers between parentheses are shown only for you to see which numbers are counted in each case.
+
+```javascript
+Examples (Input ==> Output):
+ 4 ==> 3 // we have 3 divisors - 1, 2 and 4
+ 5 ==> 2
+12 ==> 6
+30 ==> 8
+
+function solution(n) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function getDivisorsCnt(n) {
+  let count = 0;
+  for (let i = 1; i <= n; i++) {
+    if (Number.isInteger(n / i)) count++;
+  }
+  return count;
+}
+
+function getDivisorsCnt2(n) {
+  if (n < 1) return 0;
+
+  let count = 0;
+  const sqrt = Math.sqrt(n);
+
+  for (let i = 1; i <= sqrt; i++) {
+    if (n % i === 0) {
+      count++;
+
+      if (i !== n / i) {
+        count++;
+      }
+    }
+  }
+  return count;
+}
+
+function getDivisorsCnt3(n) {
+  if (n < 1) return 0;
+
+  let count = 0;
+  const sqrt = Math.sqrt(n);
+
+  for (let i = 1; i <= sqrt; i++) {
+    if (n % i === 0) {
+      n / i === i ? count++ : (count += 2);
+    }
+  }
+
+  return count;
+}
+
+console.log(getDivisorsCnt(5));
+console.log(getDivisorsCnt(12));
+
+console.log(getDivisorsCnt2(5));
+console.log(getDivisorsCnt2(12));
+
+console.log(getDivisorsCnt3(5));
+console.log(getDivisorsCnt3(12));
+```
+
+</details>
+
+---
+
+### .
+
+```javascript
+Examples (Input ==> Output):
+ ==>
+
+function solution() {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+
+```
+
+</details>
