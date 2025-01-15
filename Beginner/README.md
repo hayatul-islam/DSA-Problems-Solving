@@ -2135,7 +2135,7 @@ console.log(validatePIN("235656"));
 
 </details>
 
-### 50. Beginner Series #3 Sum of Numbers
+### . Beginner Series #3 Sum of Numbers
 
 Given two integers a and b, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return a or b.
 
@@ -2326,7 +2326,7 @@ console.log(getDivisorsCnt3(12));
 
 ---
 
-### . Sort Numbers
+### 60. Sort Numbers
 
 Finish the solution so that it sorts the passed in array of numbers. If the function passes in an empty array or null/nil value then it should return an empty array.
 
