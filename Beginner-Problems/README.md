@@ -2478,6 +2478,112 @@ console.log(solution([1, 2, 10, 50, 5]));
 
 </details>
 
+### . Ones and Zeros
+
+Given an array of ones and zeroes, convert the equivalent binary value to an integer.
+
+Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
+
+However, the arrays can have varying lengths, not just limited to 4.
+
+```javascript
+Examples (Input ==> Output):
+[0, 0, 0, 1] ==> 1
+[0, 0, 1, 0] ==> 2
+[0, 1, 0, 1] ==> 5
+[1, 0, 0, 1] ==> 9
+[0, 0, 1, 0] ==> 2
+[0, 1, 1, 0] ==> 6
+[1, 1, 1, 1] ==> 15
+[1, 0, 1, 1] ==> 11
+
+function solution() {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+const binaryArrayToNumber = (arr) => {
+  let result = 0;
+  for (let i = 0; i < arr.length; i++) {
+    result = result * 2 + arr[i];
+  }
+  return result;
+};
+
+const binaryArrayToNumber2 = (arr) => {
+  return parseInt(arr.join(""), 2);
+};
+
+console.log(binaryArrayToNumber([0, 1, 1, 0]));
+console.log(binaryArrayToNumber2([0, 1, 1, 0]));
+```
+
+</details>
+
+### .
+
+```javascript
+Examples (Input ==> Output):
+ ==>
+
+function solution() {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+
+```
+
+</details>
+
+### .
+
+```javascript
+Examples (Input ==> Output):
+ ==>
+
+function solution() {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+
+```
+
+</details>
+
+### .
+
+```javascript
+Examples (Input ==> Output):
+ ==>
+
+function solution() {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+
+```
+
+</details>
+
 ### .
 
 ```javascript
