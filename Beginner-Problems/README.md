@@ -1622,6 +1622,105 @@ console.log(rentalCarCost(10));
 
 </details>
 
+### .
+
+```javascript
+Examples (Input ==> Output):
+ ==>
+
+function solution() {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+
+```
+
+</details>
+### .
+
+```javascript
+Examples (Input ==> Output):
+ ==>
+
+function solution() {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+
+```
+
+</details>
+
+### .
+
+```javascript
+Examples (Input ==> Output):
+ ==>
+
+function solution() {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+
+```
+
+</details>
+
+### .
+
+```javascript
+Examples (Input ==> Output):
+ ==>
+
+function solution() {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+
+```
+
+</details>
+
+### .
+
+```javascript
+Examples (Input ==> Output):
+ ==>
+
+function solution() {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
 ### . A square of squares
@@ -2710,6 +2809,79 @@ const sequenceSum2 = (begin, end, step) => {
 
 console.log(sequenceSum(1, 5, 1));
 console.log(sequenceSum2(1, 5, 1));
+```
+
+</details>
+
+### . Disemvowel Trolls
+
+Trolls are attacking your comment section!
+
+A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+Note: for this kata y isn't considered a vowel.
+
+```javascript
+Examples (Input ==> Output):
+"Hello" ==> "Hll"
+
+function solution(str) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function disemvowel(str) {
+  let result = "";
+  for (const s of str) {
+    if (!"aeiouAEIOU".includes(s)) result += s;
+  }
+  return result;
+}
+
+function disemvowel2(str) {
+  let result = "";
+  for (let s of str) {
+    /[aeiou]/.test(s) ? "" : (result += s);
+  }
+
+  return result;
+}
+
+function disemvowel3(str) {
+  return str.replace(/[aeiou]/gi, "");
+}
+
+console.log(disemvowel("Hello"));
+console.log(disemvowel2("Hello"));
+console.log(disemvowel3("Hello"));
+```
+
+</details>
+
+### .
+
+```javascript
+Examples (Input ==> Output):
+ ==>
+
+function solution() {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+
 ```
 
 </details>
