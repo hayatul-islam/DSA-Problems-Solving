@@ -31,3 +31,5 @@ function stray2(numbers) {
 
 console.log(stray([4, 2, 4, 4, 4]));
 console.log(stray2([4, 2, 4, 4, 4]));
+
+console.log("abcde".length);
