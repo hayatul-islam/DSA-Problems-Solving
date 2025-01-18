@@ -2555,11 +2555,13 @@ console.log(binaryArrayToNumber2([0, 1, 1, 0]));
 
 ### . Two to One
 
+Take 2 strings s1 and s2 including only letters from a to z. Return a new sorted string (alphabetical ascending), the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.
+
 ```javascript
 Examples (Input ==> Output):
- ==>
+("xyaabbbccccdefww", "xxxxyyyyabklmopq") ==> "abcdefklmopqwxy"
 
-function solution() {
+function solution(a, b) {
   // your code
 }
 ```
@@ -2568,18 +2570,60 @@ function solution() {
   <summary>Solution</summary>
 
 ```javascript
+function longest(s1, s2) {
+  const seen = {};
+  const uniques = [];
+  const combined = s1 + s2;
 
+  for (let char of combined) {
+    if (!seen[char]) {
+      seen[char] = true;
+      uniques.push(char);
+    }
+  }
+
+  // sort the unique characters
+  for (let i = 0; i < uniques.length; i++) {
+    for (let j = 0; j < uniques.length - 1 - i; j++) {
+      if (uniques[j] > uniques[j + 1]) {
+        [uniques[j], uniques[j + 1]] = [uniques[j + 1], uniques[j]];
+      }
+    }
+  }
+
+  return uniques.join("");
+}
+
+function longest2(s1, s2) {
+  return [...new Set(s1 + s2)].sort().join("");
+}
+
+console.log(longest("xyaabbbccccdefww", "xxxxyyyyabklmopq"));
 ```
 
 </details>
 
-### .
+### . Sum of a sequence
+
+Your task is to write a function which returns the sum of a sequence of integers.
+
+The sequence is defined by 3 non-negative values: begin, end, step.
+
+If begin value is greater than the end, your function should return 0. If end is not the result of an integer number of steps, then don't add it to the sum. See the 4th example below.
+
+This is the first kata in the series:
+
+Sum of a sequence (this kata)
+Sum of a Sequence [Hard-Core Version]
 
 ```javascript
 Examples (Input ==> Output):
- ==>
+2,2,2 ==> 2
+2,6,2 ==> 12 (2 + 4 + 6)
+1,5,1 ==> 15 (1 + 2 + 3 + 4 + 5)
+1,5,3 ==> 5 (1 + 4)
 
-function solution() {
+function solution(begin, end, step){
   // your code
 }
 ```
@@ -2588,7 +2632,20 @@ function solution() {
   <summary>Solution</summary>
 
 ```javascript
+const sequenceSum = (begin, end, step) => {
+  let sum = 0;
+  for (let i = begin; i <= end; i += step) {
+    sum += i;
+  }
+  return sum;
+};
 
+const sequenceSum2 = (begin, end, step) => {
+  return begin > end ? 0 : begin + sequenceSum2(begin + step, end, step);
+};
+
+console.log(sequenceSum(1, 5, 1));
+console.log(sequenceSum2(1, 5, 1));
 ```
 
 </details>
