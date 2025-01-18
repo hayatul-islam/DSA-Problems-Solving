@@ -2553,7 +2553,7 @@ console.log(binaryArrayToNumber2([0, 1, 1, 0]));
 
 </details>
 
-### .
+### . Two to One
 
 ```javascript
 Examples (Input ==> Output):
