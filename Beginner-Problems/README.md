@@ -1584,6 +1584,44 @@ console.log(loveFunc2(0, 1));
 
 </details>
 
+### 43. Transportation on vacation
+
+After a hard quarter in the office you decide to get some rest on a vacation. So you will book a flight for you and your girlfriend and try to leave all the mess behind you.
+
+You will need a rental car in order for you to get around in your vacation. The manager of the car rental makes you some good offers.
+
+Every day you rent the car costs $40. If you rent the car for 7 or more days, you get $50 off your total. Alternatively, if you rent the car for 3 or more days, you get $20 off your total.
+
+Write a code that gives out the total amount for different days(d).
+
+```javascript
+Examples (Input ==> Output):
+2 ==> 80
+3 ==> 100
+7 ==> 230
+
+function solution(d) {
+  // your code
+}
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function rentalCarCost(d) {
+  const dis = d >= 7 ? 50 : d >= 3 ? 20 : 0;
+  return 40 * d - dis;
+}
+
+console.log(rentalCarCost(2));
+console.log(rentalCarCost(3));
+console.log(rentalCarCost(7));
+console.log(rentalCarCost(10));
+```
+
+</details>
+
 -------------------- 7 kyu -----------------------
 
 ### . A square of squares
@@ -2672,26 +2710,6 @@ const sequenceSum2 = (begin, end, step) => {
 
 console.log(sequenceSum(1, 5, 1));
 console.log(sequenceSum2(1, 5, 1));
-```
-
-</details>
-
-### .
-
-```javascript
-Examples (Input ==> Output):
- ==>
-
-function solution() {
-  // your code
-}
-```
-
-<details>
-  <summary>Solution</summary>
-
-```javascript
-
 ```
 
 </details>
