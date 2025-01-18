@@ -1719,13 +1719,17 @@ console.log(reverseList3([1, 2, 3, 4]));
 
 </details>
 
-### .
+### 46. Double Char
+
+Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
 
 ```javascript
 Examples (Input ==> Output):
- ==>
+"String"      ==> "SSttrriinngg"
+"Hello World" ==> "HHeelllloo  WWoorrlldd"
+"1234!_ "     ==> "11223344!!__  "
 
-function solution() {
+function solution(str) {
   // your code
 }
 ```
@@ -1734,7 +1738,15 @@ function solution() {
   <summary>Solution</summary>
 
 ```javascript
+function doubleChar(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    result += str[i].repeat(2);
+  }
+  return result;
+}
 
+console.log(doubleChar("String"));
 ```
 
 </details>
