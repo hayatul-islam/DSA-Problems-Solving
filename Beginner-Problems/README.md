@@ -1781,7 +1781,7 @@ function solution() {
 
 -------------------- 7 kyu -----------------------
 
-### . A square of squares
+### 51. A square of squares
 
 You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
 
@@ -1834,7 +1834,7 @@ console.log(isSquare3(24));
 
 </details>
 
-### . Shortest Word
+### 52. Shortest Word
 
 Simple, given a string of words, return the length of the shortest word(s).
 
@@ -1879,7 +1879,7 @@ console.log(findShort2("Shortest Word"));
 
 </details>
 
-### . Sum of the first nth term of Series
+### 53. Sum of the first nth term of Series
 
 Sum of the first nth term of Series
 Your task is to write a function which returns the n-th term of the following series, which is the sum of the first n terms of the sequence (n is the input parameter).
@@ -1928,7 +1928,7 @@ console.log(seriesSum2(5));
 
 </details>
 
-### . Sum of odd numbers
+### 54. Sum of odd numbers
 
 Given the triangle of consecutive odd numbers:
 
@@ -1974,7 +1974,7 @@ console.log(sumOddNumbers3(3));
 
 </details>
 
-### . Find the next perfect square!
+### 55. Find the next perfect square!
 
 You might know some pretty large perfect squares. But what about the NEXT one?
 
@@ -2014,7 +2014,7 @@ console.log(findNextSquare2(121));
 
 </details>
 
-### . Is this a triangle?
+### 56. Is this a triangle?
 
 Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
 
@@ -2052,7 +2052,7 @@ console.log(isTriangle2(1, 2, 2));
 
 </details>
 
-### . Odd or Even?
+### 57. Odd or Even?
 
 Given a list of integers, determine whether the sum of its elements is odd or even.
 
@@ -2085,7 +2085,7 @@ console.log(oddOrEven([0, 1, 4]));
 
 </details>
 
-### . Highest and Lowest
+### 58. Highest and Lowest
 
 In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
 
@@ -2141,7 +2141,7 @@ console.log(highAndLow2("1 2 3 4 5"));
 
 </details>
 
-### . Growth of a Population
+### 59. Growth of a Population
 
 In a small town the population is p0 = 1000 at the beginning of a year. The population regularly increases by 2 percent per year and moreover 50 new inhabitants per year come to live in the town. How many years does the town need to see its population greater than or equal to p = 1200 inhabitants?
 
@@ -2197,7 +2197,7 @@ console.log(nbYear(1500, 5, 100, 5000));
 
 </details>
 
-### . Reverse words
+### 60. Reverse words
 
 Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
 
@@ -2227,7 +2227,7 @@ console.log(reverseWords("This is an example!"));
 
 </details>
 
-### . Descending Order
+### 61. Descending Order
 
 Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
 
@@ -2279,7 +2279,7 @@ console.log(descendingOrder2(125678943));
 
 </details>
 
-### . Friend or Foe?
+### 62. Friend or Foe?
 
 Make a program that filters a list of strings and returns a list with only your friends name in it.
 
@@ -2311,7 +2311,7 @@ console.log(friend(["Ryan", "Kieran", "Jason", "Yous"]));
 
 </details>
 
-### . List Filtering
+### 63. List Filtering
 
 In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
 
@@ -2338,7 +2338,7 @@ console.log(filterList([1, 2, "a", 0, "b", -9]));
 
 </details>
 
-### . Printer Errors
+### 67. Printer Errors
 
 In a factory a printer prints labels for boxes. For one kind of boxes the printer has to use colors which, for the sake of simplicity, are named with letters from a to m.
 
@@ -2375,7 +2375,7 @@ console.log(printerError("aaaxbbbbyyhwawiwjjjwwm"));
 
 </details>
 
-### . Square Every Digit
+### 68. Square Every Digit
 
 Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
 
@@ -2424,7 +2424,7 @@ console.log(squareDigits2(9119));
 
 </details>
 
-### . Exes and Ohs
+### 69. Exes and Ohs
 
 Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
 
@@ -2467,7 +2467,7 @@ console.log(XO2("ooxx"));
 
 </details>
 
-### . Regex validate PIN code
+### 70. Regex validate PIN code
 
 ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
 
@@ -2504,7 +2504,7 @@ console.log(validatePIN("235656"));
 
 </details>
 
-### . Beginner Series #3 Sum of Numbers
+### 71. Beginner Series #3 Sum of Numbers
 
 Given two integers a and b, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return a or b.
 
@@ -2553,7 +2553,7 @@ console.log(getSum(-1, 2));
 
 </details>
 
-### . String ends with?
+### 72. String ends with?
 
 Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
 
@@ -2585,7 +2585,7 @@ console.log(solution2("abc", "bc"));
 
 </details>
 
-### . Testing 1-2-3
+### 73. Testing 1-2-3
 
 Your team is writing a fancy new text editor and you've been tasked with implementing the line numbering.
 
@@ -2616,7 +2616,7 @@ console.log(solution(["a", "b", "c"]));
 
 </details>
 
-### . Count the divisors of a number
+### 74. Count the divisors of a number
 
 Count the number of divisors of a positive integer n.
 
@@ -2695,7 +2695,7 @@ console.log(getDivisorsCnt3(12));
 
 ---
 
-### 60. Sort Numbers
+### 75. Sort Numbers
 
 Finish the solution so that it sorts the passed in array of numbers. If the function passes in an empty array or null/nil value then it should return an empty array.
 
@@ -2728,7 +2728,7 @@ console.log(solution([1, 2, 10, 50, 5]));
 
 </details>
 
-### . Ones and Zeros
+### 76. Ones and Zeros
 
 Given an array of ones and zeroes, convert the equivalent binary value to an integer.
 
@@ -2774,7 +2774,7 @@ console.log(binaryArrayToNumber2([0, 1, 1, 0]));
 
 </details>
 
-### . Two to One
+### 77. Two to One
 
 Take 2 strings s1 and s2 including only letters from a to z. Return a new sorted string (alphabetical ascending), the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.
 
@@ -2824,7 +2824,7 @@ console.log(longest("xyaabbbccccdefww", "xxxxyyyyabklmopq"));
 
 </details>
 
-### . Sum of a sequence
+### 78. Sum of a sequence
 
 Your task is to write a function which returns the sum of a sequence of integers.
 
@@ -2871,7 +2871,7 @@ console.log(sequenceSum2(1, 5, 1));
 
 </details>
 
-### . Disemvowel Trolls
+### 79. Disemvowel Trolls
 
 Trolls are attacking your comment section!
 
