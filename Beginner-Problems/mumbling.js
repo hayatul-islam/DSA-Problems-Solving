@@ -20,4 +20,4 @@ function accum(s) {
   return result;
 }
 
-console.log(accum("abcdd"));
+console.log(accum("abcd"));

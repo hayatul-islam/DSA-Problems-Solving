@@ -3116,13 +3116,19 @@ console.log(roundToNext5(21));
 
 </details>
 
-### .
+### 84. Mumbling
+
+This time no story, no theory. The examples below show you how to write function accum:
+
+The parameter of accum is a string which includes only letters from a..z and A..Z.
 
 ```javascript
 Examples (Input ==> Output):
- ==>
+"abcd" ==> "A-Bb-Ccc-Dddd"
+"RqaEzty" ==> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+"cwAt" ==> "C-Ww-Aaa-Tttt"
 
-function solution() {
+function solution(str) {
   // your code
 }
 ```
@@ -3131,7 +3137,19 @@ function solution() {
   <summary>Solution</summary>
 
 ```javascript
+function accum(s) {
+  let result = "";
+  for (let i = 0; i < s.length; i++) {
+    result += s[i].toUpperCase() + s[i].toLowerCase().repeat(i);
+    if (i < s.length - 1) {
+      result += "-";
+    }
+  }
 
+  return result;
+}
+
+console.log(accum("abcd"));
 ```
 
 </details>
