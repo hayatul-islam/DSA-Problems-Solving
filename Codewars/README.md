@@ -1,4 +1,4 @@
-# CodeWars Challenges 🥋
+# Codewars Challenges 🥋
 
 ![alt rank](https://www.codewars.com/users/hayatul-islam/badges/large)
 
@@ -10,8 +10,17 @@
 
 ### 📂 Overview
 
-- ├── 8-kyu/ # [Beginner problems](https://github.com/hayatul-islam/DSA-Problems-Solving/blob/main/Codewars/8-KYU/README.md)
-- ├── 7-kyu/ # Easy problems
-- ├── 6-kyu/ # Intermediate problems
-- ├── 5-kyu/ # Advanced problems
-- ├── 4-kyu/ # Expert challenges
+- 📘 **[8-kyu](https://github.com/hayatul-islam/DSA-Problems-Solving/blob/main/Codewars/8-KYU/README.md)**  
+  Beginner problems with simple logic and syntax-focused solutions.
+- 📗 **[7-kyu](https://github.com/hayatul-islam/DSA-Problems-Solving/blob/main/Codewars/7-KYU/README.md)**  
+  Easy problems requiring basic algorithmic thinking.
+- 📙 **6-kyu**  
+  Intermediate problems with moderate complexity.
+- 📕 **5-kyu**  
+  Advanced problems involving intricate algorithms and data structures.
+- 📓 **4-kyu**  
+  Expert challenges designed for seasoned developers.
+
+### 🔥 Happy Coding!
+
+Keep pushing your limits and mastering algorithms one challenge at a time! 🚀
