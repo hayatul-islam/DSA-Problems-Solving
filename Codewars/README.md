@@ -1,10 +1,6 @@
-# Codewars 🥋
+# CodeWars Challenges 🥋
 
 ![alt rank](https://www.codewars.com/users/hayatul-islam/badges/large)
-
-Welcome to the **Codewars Problem Solving** repository! This repository contains solutions to various coding challenges from [Codewars](https://www.codewars.com/), written in JavaScript. The goal of this repository is to document my journey in improving problem-solving skills, mastering algorithms, and refining my knowledge of JavaScript.
-
----
 
 ## 🌟 About Codewars
 
@@ -12,18 +8,10 @@ Welcome to the **Codewars Problem Solving** repository! This repository contains
 
 ---
 
-## 📂 Repository Structure
+### 📂 Overview
 
-The repository is organized by the difficulty level of the Katas and their respective categories. Each solution includes:
-
-- The **problem description**.
-- The **solution code**.
-- Optional **explanations** for complex solutions.
-
-### Folder Structure:
-
-├── 8-kyu/ # Beginner problems
-├── 7-kyu/ # Easy problems
-├── 6-kyu/ # Intermediate problems
-├── 5-kyu/ # Advanced problems
-├── 4-kyu/ # Expert challenges
+- ├── 8-kyu/ # [Beginner problems](https://github.com/hayatul-islam/DSA-Problems-Solving/blob/main/Codewars/8-KYU/README.md)
+- ├── 7-kyu/ # Easy problems
+- ├── 6-kyu/ # Intermediate problems
+- ├── 5-kyu/ # Advanced problems
+- ├── 4-kyu/ # Expert challenges
