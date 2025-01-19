@@ -55,6 +55,7 @@ function high(x) {
   return heightWord;
 }
 
+// optimized
 function high2(x) {
   let heightScore = 0;
   let heightWord = "";
