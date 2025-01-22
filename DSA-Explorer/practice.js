@@ -22,7 +22,6 @@ class SinglyLinkedList {
       this.tail.next = newNode;
       this.tail = newNode;
     }
-
     this.length++;
   }
 
@@ -30,44 +29,12 @@ class SinglyLinkedList {
     if (!this.head) {
       return null;
     }
-
     if (this.length === 1) {
+      const removeNode = this.head;
       this.head = null;
       this.tail = null;
       this.length = 0;
-      return this.head;
-    }
-
-    let currentNode = this.head;
-    let lastNode = this.tail;
-    let newLastNode;
-
-    while (currentNode) {
-      if (currentNode.next === lastNode) {
-        lastNode = currentNode;
-        break;
-      }
-
-      currentNode = currentNode.next;
-    }
-    newLastNode.next = null;
-    this.tail = newLastNode;
-    this.length--;
-
-    return lastNode;
-  }
-
-  pop() {
-    if (!this.head) {
-      return null;
-    }
-
-    if (this.length === 1) {
-      this.head = null;
-      this.tail = null;
-      this.length = 0;
-
-      return this.head;
+      return removeNode;
     }
 
     let currentNode = this.head;
@@ -79,21 +46,64 @@ class SinglyLinkedList {
         newLastNode = currentNode;
         break;
       }
-
       currentNode = currentNode.next;
     }
 
-    newLastNode = null;
+    newLastNode.next = null;
     this.tail = newLastNode;
     this.length--;
 
     return lastNode;
   }
+
+  shift() {
+    if (!this.head) {
+      return null;
+    }
+
+    let currentNode = this.head;
+    this.head = currentNode.next;
+    this.length--;
+
+    if (this.length === 0) {
+      this.tail = null;
+    }
+
+    // if (this.length === 1) {
+    //   this.head = null;
+    //   this.tail = null;
+    //   this.length = 0;
+    // } else {
+    //   this.head = this.head.next;
+    //   this.length--;
+    // }
+  }
+
+  unshift(value) {
+    const newNode = {
+      value,
+      next: null,
+    };
+
+    if (!this.head) {
+      this.head = newNode;
+      this.tail = newNode;
+    } else {
+      newNode.next = this.head;
+      this.head = newNode;
+    }
+
+    this.length++;
+  }
 }
 
 const list = new SinglyLinkedList();
 
-list.push(3);
-list.push(39);
-// console.log(list.isEmpty());
+list.push(20);
+list.push(30);
+// list.push(40);
+// list.push(50);
+// list.pop();
+list.unshift(100);
+
 console.log(list);
