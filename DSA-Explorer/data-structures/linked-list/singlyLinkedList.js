@@ -1,3 +1,10 @@
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
+
 class SinglyLinkedList {
   constructor() {
     this.head = null;
@@ -10,10 +17,7 @@ class SinglyLinkedList {
   }
 
   push(value) {
-    let newNode = {
-      value,
-      next: null,
-    };
+    let newNode = new Node(value);
 
     if (this.isEmpty()) {
       this.head = newNode;
@@ -80,10 +84,7 @@ class SinglyLinkedList {
   }
 
   unshift(value) {
-    const newNode = {
-      value,
-      next: null,
-    };
+    const newNode = new Node(value);
 
     if (!this.head) {
       this.head = newNode;
@@ -95,6 +96,16 @@ class SinglyLinkedList {
 
     this.length++;
   }
+
+  showList() {
+    let arr = [];
+    let currentNode = this.head;
+    while (currentNode) {
+      arr.push(currentNode.value);
+      currentNode = currentNode.next;
+    }
+    return arr;
+  }
 }
 
 const list = new SinglyLinkedList();
@@ -103,7 +114,9 @@ list.push(4);
 list.push(6);
 list.push(10);
 list.push(14);
-list.pop();
+// list.pop();
+
+console.log(list.showList());
 
 // console.log(list.isEmpty());
 console.log(list);
