@@ -1,3 +1,9 @@
+class Node {
+  constructor(value) {
+    (this.value = value), (this.next = null);
+  }
+}
+
 class SinglyLinkedList {
   constructor() {
     this.head = null;
@@ -5,22 +11,14 @@ class SinglyLinkedList {
     this.length = 0;
   }
 
-  isEmpty() {
-    return this.length === 0;
-  }
-
   push(value) {
-    const newNode = {
-      value,
-      next: null,
-    };
-
-    if (this.isEmpty()) {
-      this.head = newNode;
-      this.tail = newNode;
+    let newValue = new Node(value);
+    if (this.length === 0) {
+      this.head = newValue;
+      this.tail = newValue;
     } else {
-      this.tail.next = newNode;
-      this.tail = newNode;
+      this.tail.next = newValue;
+      this.tail = newValue;
     }
     this.length++;
   }
@@ -29,12 +27,14 @@ class SinglyLinkedList {
     if (!this.head) {
       return null;
     }
+
     if (this.length === 1) {
-      const removeNode = this.head;
+      const remove = this.head;
       this.head = null;
       this.tail = null;
       this.length = 0;
-      return removeNode;
+
+      return remove;
     }
 
     let currentNode = this.head;
@@ -68,42 +68,31 @@ class SinglyLinkedList {
     if (this.length === 0) {
       this.tail = null;
     }
-
-    // if (this.length === 1) {
-    //   this.head = null;
-    //   this.tail = null;
-    //   this.length = 0;
-    // } else {
-    //   this.head = this.head.next;
-    //   this.length--;
-    // }
   }
 
   unshift(value) {
-    const newNode = {
-      value,
-      next: null,
-    };
+    let newNode = new Node(value);
 
-    if (!this.head) {
+    let currentNode = this.head;
+    if (currentNode) {
+      newNode.next = currentNode;
+      this.head = newNode;
+    } else {
       this.head = newNode;
       this.tail = newNode;
-    } else {
-      newNode.next = this.head;
-      this.head = newNode;
     }
 
-    this.length++;
+    list.length++;
   }
 }
 
 const list = new SinglyLinkedList();
 
-list.push(20);
-list.push(30);
-// list.push(40);
-// list.push(50);
+list.push(5);
+list.push(3);
+// list.push(30);
+list.unshift(59);
 // list.pop();
-list.unshift(100);
+// list.shift();
 
 console.log(list);
