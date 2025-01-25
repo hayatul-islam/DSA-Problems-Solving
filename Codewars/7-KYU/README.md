@@ -1686,13 +1686,22 @@ console.log(calculateYears(1000, 0.01625, 0.18, 1200));
 
 </details>
 
-### .
+### 38. Fix string case
+
+In this Kata, you will be given a string that may have mixed uppercase and lowercase letters and your task is to convert that string to either lowercase only or uppercase only based on:
+
+make as few changes as possible.
+if the string contains equal number of uppercase and lowercase letters, convert the string to lowercase.
+
+More examples in test cases. Good luck!
 
 ```javascript
 Examples (Input ==> Output):
- ==>
+"coDe" ==> "code" Lowercase characters > uppercase. Change only the "D" to lowercase.
+"CODe" ==> "CODE" Uppercase characters > lowecase. Change only the "e" to uppercase.
+"coDE" ==> "code" Upper == lowercase. Change all to lowercase.
 
-function solution() {
+function solution(str) {
   // your code
 }
 ```
@@ -1701,7 +1710,24 @@ function solution() {
   <summary>Solution</summary>
 
 ```javascript
+function solve(str) {
+  let lowercase = 0;
+  let uppercase = 0;
 
+  for (const s of str) {
+    if (s === s.toUpperCase()) {
+      uppercase++;
+    } else {
+      lowercase++;
+    }
+  }
+
+  return lowercase >= uppercase ? str.toLowerCase() : str.toUpperCase();
+}
+
+console.log(solve("cODE"));
+console.log(solve("coDE"));
+console.log(solve("coDe"));
 ```
 
 </details>
