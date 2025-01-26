@@ -1816,21 +1816,3 @@ console.log(factorial2(5));
 </details>
 
 ### .
-
-```javascript
-Examples (Input ==> Output):
- ==>
-
-function solution() {
-  // your code
-}
-```
-
-<details>
-  <summary>Solution</summary>
-
-```javascript
-
-```
-
-</details>
