@@ -1732,13 +1732,17 @@ console.log(solve("coDe"));
 
 </details>
 
-### .
+### 39. Isograms
+
+An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
 
 ```javascript
 Examples (Input ==> Output):
- ==>
+"Dermatoglyphics" ==> true
+"aba" ==> false
+"moOse" ==> false (ignore letter case)
 
-function solution() {
+function solution(str) {
   // your code
 }
 ```
@@ -1747,7 +1751,21 @@ function solution() {
   <summary>Solution</summary>
 
 ```javascript
+function isIsogram(str) {
+  let seen = {};
+  for (let s of str.toLowerCase()) {
+    if (seen[s]) {
+      return false;
+    }
 
+    seen[s] = true;
+  }
+
+  return true;
+}
+
+console.log(isIsogram("aba"));
+console.log(isIsogram("Dermatoglyphics"));
 ```
 
 </details>
