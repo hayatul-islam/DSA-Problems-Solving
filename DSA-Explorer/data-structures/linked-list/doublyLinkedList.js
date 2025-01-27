@@ -78,6 +78,18 @@ class DoublyLinkedList {
     this.length++;
     return this;
   }
+
+  showList() {
+    let arr = [];
+    let currentNode = this.head;
+
+    while (currentNode) {
+      arr.push(currentNode.value);
+      currentNode = currentNode.next;
+    }
+
+    return arr;
+  }
 }
 
 const list = new DoublyLinkedList();
@@ -86,7 +98,8 @@ list.push(43);
 list.push(4);
 list.unshift(40);
 list.unshift(10);
-// list.shift();
+list.shift();
 // list.shift();
 
+console.log(list.showList());
 console.log(list);
