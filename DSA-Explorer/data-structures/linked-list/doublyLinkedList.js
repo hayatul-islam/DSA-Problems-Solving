@@ -64,14 +64,29 @@ class DoublyLinkedList {
 
     return firstNode;
   }
+
+  unshift(value) {
+    let newNode = new Node(value);
+    if (!this.head) {
+      this.head = newNode;
+      this.tail = newNode;
+    } else {
+      newNode.next = this.head;
+      this.head.prev = newNode;
+      this.head = newNode;
+    }
+    this.length++;
+    return this;
+  }
 }
 
 const list = new DoublyLinkedList();
 
 list.push(43);
 list.push(4);
-list.push(40);
-list.shift();
+list.unshift(40);
+list.unshift(10);
+// list.shift();
 // list.shift();
 
 console.log(list);
