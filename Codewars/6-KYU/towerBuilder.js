@@ -25,6 +25,7 @@ function towerBuilder(nFloors) {
 
   for (let i = 0; i < nFloors; i++) {
     let star = "";
+
     for (let j = 0; j < nFloors - i - 1; j++) {
       star += " ";
     }
@@ -36,7 +37,8 @@ function towerBuilder(nFloors) {
     for (let j = 0; j < nFloors - i - 1; j++) {
       star += " ";
     }
-    tower.push(star);
+
+    tower[i] = star;
   }
 
   return tower;
