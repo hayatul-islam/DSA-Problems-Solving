@@ -1910,13 +1910,23 @@ console.log(sumTwoSmallestNumbers([19, 5, 42, 2, 77]));
 
 </details>
 
-### .
+### 43. Functional Addition
+
+Create a function add(n)/Add(n) which returns a function that always adds n to any number
+
+Note for Java: the return type and methods have not been provided to make it a bit more challenging.
+
+var addOne = add(1);
+addOne(3); // 4
+
+var addThree = add(3);
+addThree(3); // 6
 
 ```javascript
 Examples (Input ==> Output):
- ==>
+(4)(1) ==> 5
 
-function solution() {
+function solution(n) {
   // your code
 }
 ```
@@ -1925,7 +1935,11 @@ function solution() {
   <summary>Solution</summary>
 
 ```javascript
+function add(n) {
+  return (m) => n + m;
+}
 
+console.log(add(4)(1));
 ```
 
 </details>
