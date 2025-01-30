@@ -20,6 +20,7 @@
 
 function solve(arr) {
   let hash = {};
+
   for (let i = 0; i < arr.length; i++) {
     let abs = Math.abs(arr[i]);
 

@@ -34,5 +34,5 @@ function minValue(values) {
   return Number(result);
 }
 
-// console.log(minValue([4, 1, 3, 1]));
-console.log(minValue([5, 6, 9, 9, 7, 6, 4]));
+console.log(minValue([4, 1, 3, 1]));
+// console.log(minValue([5, 6, 9, 9, 7, 6, 4]));
