@@ -1,3 +1,6 @@
+// link: https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/G
+
+
 #include <stdio.h>
 int main(){
     int n;
